@@ -1,0 +1,4 @@
+Hi there!,\n\nour friend [[requested_by]] asks if I can send you the link of the votation page:
+Ok ok ok,\n\n[[requested_by]] here is the link to the page:
+Thanks for ask [[requested_by]],\n\nhere you are the link:
+Of course [[requested_by]],\n\nyou can visit the votation on this page:

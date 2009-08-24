@@ -1,0 +1,8 @@
+AAAAAAA <%= @exception.class %> 
+
+<%= @exception.message %>  <%= @exception.backtrace.join("\n  ").first %> 
+
+---------
+Backtrace:
+---------
+  <%= @exception.backtrace.join("\n  ") %>

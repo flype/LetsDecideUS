@@ -1,0 +1,74 @@
+body{color:#333;font:62.5%/1.5em "Helvetica Neue", Arial, Helvetica, sans-serif;}
+.alignleft{float:left;margin-left:0;}
+.alignright{float:right;margin-right:0;}
+.half{width:50%;}
+a{color:#069;}
+a:hover{background:#069;color:#fff;}
+strong{font-weight:bold;}
+h1,h2,h3,h4{font:bold 1em Helvetica,Arial,Sans-Serif;}
+h1{font-size:5em;letter-spacing:-2px;}
+h2{font-size:4em;letter-spacing:-2px;margin-bottom:0.2em;}
+.home h2{display:none;}
+h3{font-size:3em;letter-spacing:-1px;margin-bottom:0.4em;}
+.poll h3{border-bottom:1px #ccc dotted;}
+h4{font-size:2em;letter-spacing:-1px;margin-bottom:}
+p + p{margin-top:0.8em;}
+
+.avatar{border:1px #ccc solid;padding:0.2em;}
+.author,.total span{font-weight:bold;}
+
+#masthead{background:#069 url('../img/masthead.png');height:20em;overflow:hidden;}
+#navbar{background:transparent url('../img/navbar.png') repeat-x;height:5em;overflow:hidden;}
+.inner{margin:0 auto;width:640px;overflow:hidden;}
+#logo{float:left;}
+#logo span,.description{display:none;}
+#logo a{background:transparent url('../img/logo.png') left center no-repeat;display:block;height:4em;width:250px;}
+#navbar #logo a{background:transparent url('../img/logo.png') left center no-repeat;display:block;height:1em;width:250px;}
+#share{float:right;padding:0.4em;}
+#share label{color:#eee;text-transform:uppercase;}
+#txtfld{margin-left:0.4em;padding:0.2em;width:11.5em;}
+
+#steps,#show,#faq,#header,#content,#answers,#footer{margin:2em auto 0;overflow:hidden;width:640px;}
+
+.home ol{overflow:hidden;padding:2em 0;}
+#steps li{float:left;height:210px;position:relative;width:210px;}
+.step1{background:url('../img/step1.png') no-repeat;}
+.step2{background:url('../img/step2.png') no-repeat;}
+.step3{background:url('../img/step3.png') no-repeat;}
+ol li + li{margin-left:5px;}
+ul li + li{margin-top:2em;}
+#steps h3{background:#222;bottom:0;display:block;color:#eee;font-size:1.8em;letter-spacing:-1px;left:10px;padding:0.5em 10px;position:absolute;width:160px;z-index:1;filter:alpha(opacity=90);-moz-opacity:0.9;opacity:0.9;}
+#show h3,#faq h3{color:#e6751f;font-size:2em;letter-spacing:-1px;}
+#show{background:url('../img/robotito.png') no-repeat top right;}
+.video{background:url('../img/video.png') no-repeat left top;padding:0.8em 0 0.5em 1em;}
+
+#header{margin-bottom:2em;overflow:hidden;}
+#header .avatar{float:left;margin-right:2em;}
+#header .title{margin-top:0.2em;}
+#header .meta{margin:0.4em 0 0;}
+#header .answers-link{background:transparent url('../img/comment.png') no-repeat left center;margin-left:5px;padding:0.2em 0 0.2em 2em;}
+
+.home p,#content p{font-size:1.2em;}
+#content img,#content iframe,#content object{border:1px #ccc solid;margin:1em 0;padding:4px;max-width:630px;}
+#content img.alignleft{margin-right:0.5em;}
+#content img.alignright{margin-left:0.5em;}
+
+#result{background:#C6DFE5 url('../img/tarrow.png') no-repeat right bottom;border-top:1px solid rgba(0,0,0,0.2);border-right: 1px solid rgba(0,0,0,0.1);color: #537683;margin:0 auto;margin-top:1.8em;padding:2em 0 3em;text-align:center;width:99px;text-shadow:rgba(255,255,255,0.5) 0 1px 0;-moz-border-radius-topleft:2px;-moz-border-radius-topright:2px;-webkit-border-top-left-radius:2px;-webkit-border-top-right-radius:2px;}
+.col{width:40%;}
+.yes{color:green;}
+.no{color:red;}
+#answers .answers-bottom{background: url('../img/barrow.png') center top;height:20px;margin:0 auto;width:100px;}
+#answers ol{background: url('../img/timeline.png') repeat-y top center;overflow:hidden;}
+.vote{clear:both;margin-bottom:2em;overflow:hidden;width:240px;}
+.lcol{background:url('../img/larrow.png') no-repeat top right;padding-right:25px;text-align:right;}
+.lcol .avatar{float:right;margin-left:1em;}
+.rcol{background:url('../img/rarrow.png') no-repeat top left;padding-left:30px;float:right;}
+.rcol .avatar{float:left;margin-right:1em;}
+.titlecol{background:none;margin-bottom:4em;}
+.novalid{background:none;overflow:hidden;}
+.vote .vote-content{display:none;}
+.vote:hover .vote-content{display:block;}
+
+#footer{border-top:1px #ccc dotted;clear:both;padding:1em 0;}
+#footer ul{float:right;}
+#footer li{display:inline;}

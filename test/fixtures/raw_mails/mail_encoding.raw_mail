@@ -1,0 +1,85 @@
+Return-Path: <grbounce-ezXnDQUAAABH8yTd6e4UAvLkHa0KHwqD=bot=letsdecide.us@googlegroups.com>
+X-Original-To: bot@letsdecide.us
+Delivered-To: bot@letsdecide.us
+Received: from localhost (mail.n2kp3.com [192.168.2.1])
+	by LINCL587.n2kp3.com (Postfix) with ESMTP id 01FCA5762D2
+	for <bot@letsdecide.us>; Sun, 23 Aug 2009 23:47:18 +0200 (CEST)
+Received: from LINCL587.n2kp3.com ([192.168.2.1])
+	by localhost (lincl107.n2kp3.com [192.168.2.1]) (amavisd-new, port 10024)
+	with ESMTP id StZP7QaQeFBt for <bot@letsdecide.us>;
+	Sun, 23 Aug 2009 23:47:17 +0200 (CEST)
+Received: from mail-yx0-f152.google.com (mail-yx0-f152.google.com [209.85.210.152])
+	by LINCL587.n2kp3.com (Postfix) with ESMTP id B86CB5762D1
+	for <bot@letsdecide.us>; Sun, 23 Aug 2009 23:47:17 +0200 (CEST)
+Received: by yxe16 with SMTP id 16so3615614yxe.13
+        for <bot@letsdecide.us>; Sun, 23 Aug 2009 15:00:06 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:received:x-sender:x-apparently-to
+         :mime-version:received:date:in-reply-to:x-ip:references:user-agent
+         :x-http-useragent:message-id:subject:from:to:content-type
+         :content-transfer-encoding:reply-to:sender:precedence:x-google-loop
+         :mailing-list:list-id:list-post:list-help:list-unsubscribe
+         :x-beenthere-env:x-beenthere;
+        bh=k5Usc1PpE8JbvpNi7zejWRkX8Ku805RQWHSENeIwuhk=;
+        b=M/MuyayP8+KThCl5UjwHCBxsNSQkRaj1lRQmQGkEGAFYcwiFHe909OseSW3WCgwb/x
+         N9oN2M1YAPXWlslxoKULgn5+uurAcCZAlU1HTWiplG5EbrG+4YlS7uxL/ZAZvY7Lli4i
+         bK/ntLeXzVifwLs5Bc/39lTX/5BgDQtUaA5T0=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-sender:x-apparently-to:mime-version:date:in-reply-to:x-ip
+         :references:user-agent:x-http-useragent:message-id:subject:from:to
+         :content-type:content-transfer-encoding:reply-to:sender:precedence
+         :x-google-loop:mailing-list:list-id:list-post:list-help
+         :list-unsubscribe:x-beenthere-env:x-beenthere;
+        b=gqJyXWAipkyD+vU1kbrFEV0D9RN04Sp76NuZGb/TnlVl1SY3yRVgkfLRjnx1xk/gt1
+         BriyO4YXdeZ5PtlfeUOjaTYCBXT6NFLnhCOwlNxe/7urAQtVKogAmaJKvPI1TMnK/I/o
+         MV2jLupv38XAJJOiHvsF/h2O11Bii6qoPJEvI=
+Received: by 10.150.59.12 with SMTP id h12mr1913939yba.6.1251064804906;
+        Sun, 23 Aug 2009 15:00:04 -0700 (PDT)
+Received: by 10.177.102.22 with SMTP id e22gr33yqm.0;
+	Sun, 23 Aug 2009 15:00:04 -0700 (PDT)
+X-Sender: alvarobp@gmail.com
+X-Apparently-To: letsdecideus_test@googlegroups.com
+MIME-Version: 1.0
+Received: by 10.150.118.38 with SMTP id q38mr1907023ybc.16.1251064804666; Sun,  23 Aug 2009 15:00:04 -0700 (PDT)
+Date: Sun, 23 Aug 2009 15:00:04 -0700 (PDT)
+In-Reply-To: <4a91bb30d3df2_67eb..fdbe828de1e1@li86-209.tmail>
+X-IP: 213.96.103.181
+References: <4a91bb30d3df2_67eb..fdbe828de1e1@li86-209.tmail>
+User-Agent: G2/1.0
+X-HTTP-UserAgent: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US;  rv:1.9.1.2) Gecko/20090729 Firefox/3.5.2,gzip(gfe),gzip(gfe)
+Message-ID: <b6317a55-c5eb-40a8-85d0-6db13d980909@g31g2000yqc.googlegroups.com>
+Subject: Re: Do you want to help us with the debug?
+From: =?ISO-8859-1?Q?=C1lvaro_Bautista?= <alvarobp@gmail.com>
+To: letsdecideus_test <letsdecideus_test@googlegroups.com>
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+Reply-To: letsdecideus_test@googlegroups.com
+Sender: letsdecideus_test@googlegroups.com
+Precedence: bulk
+X-Google-Loop: groups
+Mailing-List: list letsdecideus_test@googlegroups.com;
+	contact letsdecideus_test+owner@googlegroups.com
+List-Id: <letsdecideus_test.googlegroups.com>
+List-Post: <mailto:letsdecideus_test@googlegroups.com>
+List-Help: <mailto:letsdecideus_test+help@googlegroups.com>
+List-Unsubscribe: <http://googlegroups.com/group/letsdecideus_test/subscribe>,
+	<mailto:letsdecideus_test+unsubscribe@googlegroups.com>
+X-BeenThere-Env: letsdecideus_test@googlegroups.com
+X-BeenThere: letsdecideus_test@googlegroups.com
+
+
+I'm rumbling too. So here it goes my tiny contribution:
+
++1
+
+Good Job BTW
+
+On Aug 23, 11:57=A0pm, b...@letsdecide.us wrote:
+> fguillen.mail on gmail.com has asked me for the link to the fancy votatio=
+n page.. so here you go:
+>
+> This is the super link
+>
+> http://letsdecide.us/abad029606aee53c87deb67c5c07eb385814204c

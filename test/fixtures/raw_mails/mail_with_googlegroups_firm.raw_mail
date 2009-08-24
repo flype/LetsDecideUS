@@ -1,0 +1,82 @@
+Delivered-To: fguillen.mail@gmail.com
+Received: by 10.216.5.69 with SMTP id 47cs186307wek;
+        Sun, 23 Aug 2009 06:17:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of grbounce-SOtiCQUAAABar6VliTnV41tk9JBzPo7i=fguillen.mail=gmail.com@googlegroups.com designates 10.150.130.10 as permitted sender) client-ip=10.150.130.10;
+Authentication-Results: mr.google.com; spf=pass (google.com: domain of grbounce-SOtiCQUAAABar6VliTnV41tk9JBzPo7i=fguillen.mail=gmail.com@googlegroups.com designates 10.150.130.10 as permitted sender) smtp.mail=grbounce-SOtiCQUAAABar6VliTnV41tk9JBzPo7i=fguillen.mail=gmail.com@googlegroups.com; dkim=pass header.i=grbounce-SOtiCQUAAABar6VliTnV41tk9JBzPo7i=fguillen.mail=gmail.com@googlegroups.com
+Received: from mr.google.com ([10.150.130.10])
+        by 10.150.130.10 with SMTP id c10mr9905700ybd.21.1251033424859 (num_hops = 1);
+        Sun, 23 Aug 2009 06:17:04 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:received:x-sender:x-apparently-to
+         :received:received:received:received-spf:received:dkim-signature
+         :domainkey-signature:mime-version:content-type
+         :content-transfer-encoding:received:from:date:message-id:subject:to
+         :reply-to:sender:precedence:x-google-loop:mailing-list:list-id
+         :list-post:list-help:list-unsubscribe:x-beenthere-env:x-beenthere;
+        bh=XMcIgoPaqItylWzOGiJSycvWDmwZc0Clmm21VrTPSXo=;
+        b=OtOtHhh0wiWYAn/HBgcVgPF8DNvaHxbyh9RzzPV5Tm20+FcVjN556ZWknRrVXnn/gw
+         nj0HrYPWHCF0qbJImqCB+MG1gypdooaHY8bimGxAbRbludqLJlQZI+caBWZjT4foLb/n
+         LBUwg7UMAGl249l0AtULZuiKI/zQkg6Z4QL8I=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-sender:x-apparently-to:received-spf:authentication-results
+         :dkim-signature:domainkey-signature:mime-version:content-type
+         :content-transfer-encoding:from:date:message-id:subject:to:reply-to
+         :sender:precedence:x-google-loop:mailing-list:list-id:list-post
+         :list-help:list-unsubscribe:x-beenthere-env:x-beenthere;
+        b=PdaAYLzo14V4945Nfuz/9Njlmuekn00MHewAVleEczWAL7FRjx0NO/meBbEUTHCWII
+         8ShxGOxpHAdb4KKEdJY9faYmTIoDnXRMMANzn46E53m8PL8t3A80dvtdyTod7A1wMGH5
+         PKBnS+tM5/1vcE1iZiJ8iv5rG1UdOU63pMFG0=
+Received: by 10.150.130.10 with SMTP id c10mr1669144ybd.21.1251033423843;
+        Sun, 23 Aug 2009 06:17:03 -0700 (PDT)
+Received: by 10.176.54.11 with SMTP id c11gr126yqa.0;
+	Sun, 23 Aug 2009 06:17:03 -0700 (PDT)
+X-Sender: felipe.talavera@gmail.com
+X-Apparently-To: railsrumble_mallorca@googlegroups.com
+Received: by 10.211.194.10 with SMTP id w10mr773997ebp.11.1251033423566; Sun, 23 Aug 2009 06:17:03 -0700 (PDT)
+Received: by 10.211.194.10 with SMTP id w10mr773995ebp.11.1251033422238; Sun, 23 Aug 2009 06:17:02 -0700 (PDT)
+Return-Path: <felipe.talavera@gmail.com>
+Received: from mail-ew0-f215.google.com (mail-ew0-f215.google.com [209.85.219.215]) by gmr-mx.google.com with ESMTP id 16si990063ewy.3.2009.08.23.06.17.01; Sun, 23 Aug 2009 06:17:01 -0700 (PDT)
+Received-SPF: pass (google.com: domain of felipe.talavera@gmail.com designates 209.85.219.215 as permitted sender) client-ip=209.85.219.215;
+Authentication-Results: gmr-mx.google.com; spf=pass (google.com: domain of felipe.talavera@gmail.com designates 209.85.219.215 as permitted sender) smtp.mail=felipe.talavera@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by ewy11 with SMTP id 11so1678224ewy.11 for <railsrumble_mallorca@googlegroups.com>; Sun, 23 Aug 2009 06:17:01 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma; h=domainkey-signature:mime-version:received:from:date:message-id :subject:to:content-type:content-transfer-encoding; bh=iV4De7S4zuA5CtheJ3flhErLjwSUjQOKtk3UUGlKKlw=; b=HNra3t6d4Qtb3Y2GQXymXgG5wkHmY84YAwgjV/mkMb4Q9SVN2wjyJUgtZJELgERqkA inI/Xtrtdk0Cbp6MKZ1dpdjSlA3AQIS6cMvtHOTqCLY8IoEx0Y1K0f3xMslNCyjjb7i/ 0wUli+V2VJxFezK1XxO91gIuRA6uCSro4JiFY=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=gmail.com; s=gamma; h=mime-version:from:date:message-id:subject:to:content-type :content-transfer-encoding; b=JYRuKchRM5eucOOzDAwjskfC7lEltUi2oLBQ1YJPXFGQDPb2r5hisyErYrrxshK8JB +JmS+G9f5jkTulkUGaI13+LZbJXy2aCTY5vGvbRxRWU37U5x2+NkJX2ipnb+7xpk6wpU htiEMoyWccWxJP3cv4aFXPYqy4Da1U0IpY9Pk=
+Mime-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Received: by 10.211.177.3 with SMTP id e3mr2076814ebp.16.1251033421143; Sun,  23 Aug 2009 06:17:01 -0700 (PDT)
+From: Felipe Talavera <felipe.talavera@gmail.com>
+Date: Sun, 23 Aug 2009 15:16:41 +0200
+Message-ID: <b0fca4e0908230616i44cb1514i46da6b32acd5b1b0@mail.gmail.com>
+Subject: =?UTF-8?B?dmFtb3MgYSBkYXIgY2HDsWl0YWFhYT8/Pz8=?=
+To: railsrumble_mallorca <railsrumble_mallorca@googlegroups.com>
+Reply-To: railsrumble_mallorca@googlegroups.com
+Sender: railsrumble_mallorca@googlegroups.com
+Precedence: bulk
+X-Google-Loop: groups
+Mailing-List: list railsrumble_mallorca@googlegroups.com;
+	contact railsrumble_mallorca+owner@googlegroups.com
+List-Id: <railsrumble_mallorca.googlegroups.com>
+List-Post: <mailto:railsrumble_mallorca@googlegroups.com>
+List-Help: <mailto:railsrumble_mallorca+help@googlegroups.com>
+List-Unsubscribe: <http://googlegroups.com/group/railsrumble_mallorca/subscribe>,
+	<mailto:railsrumble_mallorca+unsubscribe@googlegroups.com>
+X-BeenThere-Env: railsrumble_mallorca@googlegroups.com
+X-BeenThere: railsrumble_mallorca@googlegroups.com
+
+XXX
+YYY
+
+--~--~---------~--~----~------------~-------~--~----~
+Has recibido este mensaje porque est=C3=A1s suscrito a Grupo "grupito de la=
+ railsrumble mallorca" de Grupos de Google.
+ Si quieres publicar en este grupo, env=C3=ADa un mensaje de correo=20
+electr=C3=B3nico a railsrumble_mallorca@googlegroups.com
+ Para anular la suscripci=C3=B3n a este grupo, env=C3=ADa un mensaje a rail=
+srumble_mallorca+unsubscribe@googlegroups.com
+ Para obtener m=C3=A1s opciones, visita este grupo en http://groups.google.=
+com/group/railsrumble_mallorca?hl=3Des.
+
+-~----------~----~----~----~------~----~------~--~---

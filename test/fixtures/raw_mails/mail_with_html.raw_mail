@@ -1,0 +1,76 @@
+Delivered-To: fguillen.mail@gmail.com
+Received: by 10.216.5.69 with SMTP id 47cs184902wek;
+        Sun, 23 Aug 2009 05:35:54 -0700 (PDT)
+Received: by 10.210.39.11 with SMTP id m11mr3537863ebm.27.1251030954407;
+        Sun, 23 Aug 2009 05:35:54 -0700 (PDT)
+Return-Path: <fguillen.testing@gmail.com>
+Received: from ey-out-2122.google.com (ey-out-2122.google.com [74.125.78.27])
+        by mx.google.com with ESMTP id 26si8951202ewy.11.2009.08.23.05.35.53;
+        Sun, 23 Aug 2009 05:35:53 -0700 (PDT)
+Received-SPF: pass (google.com: domain of fguillen.testing@gmail.com designates 74.125.78.27 as permitted sender) client-ip=74.125.78.27;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of fguillen.testing@gmail.com designates 74.125.78.27 as permitted sender) smtp.mail=fguillen.testing@gmail.com; dkim=pass (test mode) header.i=@gmail.com
+Received: by ey-out-2122.google.com with SMTP id 9so518414eyd.21
+        for <fguillen.mail@gmail.com>; Sun, 23 Aug 2009 05:35:53 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:from:to
+         :content-type:mime-version:subject:date:x-mailer;
+        bh=qCwPfL/jHkJhlfGGKald7gQM/NOzvs+Rpu1z2o6AeIw=;
+        b=h2nW0lUpUzvBb7KBZsFQJxQbSr11agPMduGPD7gqdoE5K7uo8z97ZJeNEeBkOSNrL5
+         wCEyFdnF4WVrKRmtigXS4C2gE8XyJ4ySzaSWdmNjGQ0OWQRh7/GPXPd5bIMfJAWnYwph
+         BaTkcGBwV+40yUknO/kY5Msq1jw8k+nqn9EDM=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:from:to:content-type:mime-version:subject:date:x-mailer;
+        b=PHyaPybK2tL/rLX+fzvCaspkat0eqF3nftElrvMWa3z9AIACDA0g/Sf855FmTrvTaT
+         2XKUrGhcZ8nOp3I+DjAEoSc8Y364D8RwpdOQJJRtoAvmRtCrTJ7ZFfTzHonY+i+6Poc2
+         M61CPR/hhE3N0NNPf3odmVcpvMEyXDon4SO6Y=
+Received: by 10.211.201.14 with SMTP id d14mr654038ebq.40.1251030953271;
+        Sun, 23 Aug 2009 05:35:53 -0700 (PDT)
+Return-Path: <fguillen.testing@gmail.com>
+Received: from ?192.168.1.34? (163.Red-83-39-42.dynamicIP.rima-tde.net [83.39.42.163])
+        by mx.google.com with ESMTPS id 24sm5667809eyx.43.2009.08.23.05.35.50
+        (version=TLSv1/SSLv3 cipher=RC4-MD5);
+        Sun, 23 Aug 2009 05:35:51 -0700 (PDT)
+Message-Id: <CE481A86-4DE5-4D56-9A6D-CDD61BDDAF3C@gmail.com>
+From: Fguillen Testing <fguillen.testing@gmail.com>
+To: =?ISO-8859-1?Q?Fernando_Guill=E9n?= <fguillen.mail@gmail.com>
+Content-Type: multipart/alternative; boundary=Apple-Mail-1--6674749
+Mime-Version: 1.0 (Apple Message framework v935.3)
+Subject: mail with html
+Date: Sun, 23 Aug 2009 14:35:48 +0200
+X-Mailer: Apple Mail (2.935.3)
+
+
+--Apple-Mail-1--6674749
+Content-Type: text/plain;
+	charset=ISO-8859-1;
+	format=flowed
+Content-Transfer-Encoding: quoted-printable
+
+Este es realmente el body
+
+XXX
+
+hasta aqu=ED.
+
+
+
+--Apple-Mail-1--6674749
+Content-Type: text/html;
+	charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+<html><body style=3D"word-wrap: break-word; -webkit-nbsp-mode: space; =
+-webkit-line-break: after-white-space; ">Este es<font =
+class=3D"Apple-style-span" size=3D"7"><span class=3D"Apple-style-span" =
+style=3D"font-size: 48px;"> realmente el =
+body</span></font><div><br></div><div><font class=3D"Apple-style-span" =
+color=3D"#FF0046"><font class=3D"Apple-style-span" size=3D"3"><span =
+class=3D"Apple-style-span" style=3D"font-size: =
+12px;"><b>XXX</b></span></font></font></div><div><font =
+class=3D"Apple-style-span" =
+color=3D"#FF0046"><b><br></b></font></div><div>hasta =
+aqu=ED.</div><div><br></div><div><br></div></body></html>=
+
+--Apple-Mail-1--6674749--

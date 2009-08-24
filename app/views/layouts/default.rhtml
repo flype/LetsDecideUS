@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+	<meta content="Lazy man&#39;s mail voting system" name="description" />
+	<title>Let&#39;s decide us <%= (" &#187; " + @question.subject) unless @question.nil? %></title>	
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="http://yui.yahooapis.com/2.7.0/build/reset/reset-min.css" rel="stylesheet" type="text/css" /> 	
+	<%= stylesheet_link_tag "style.css" %>
+	<%= stylesheet_link_tag "slidingbox.css" %>
+</head>
+<body class="poll">
+	<div id="navbar">
+		<div class="inner">
+			<div id="logo">
+				<h1><a href="#" title="Let&#39;s decide us" rel="home"><span>Let&apos;s decide us</span></a></h1>
+				<p class="description">The new way of voting on mailing lists</p>
+			</div>
+			<div id="share">
+				<form id="shorturl" action="#">
+					<fieldset>
+						<label for="txtfld">Share URL</label>	
+						<input name="url" class="text" readonly="readonly" id="txtfld" onclick="SelectAll('txtfld');" value="http://letsdecide.us/<%= @question.qhash unless @question.nil? %>" type="text" />
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div><!-- #navbar -->
+
+	<% unless flash[:notice].blank? %>
+	<div id="flash_notify">
+		<p><%= flash[:notice] %></p>
+	</div>
+	<% end %>
+	<div id="poll">
+		<%= yield %>
+	</div><!-- #poll -->
+	<div id="footer">
+		<ul>
+			<li><a href="#">blog</a></li> ·
+			<li><a href="#">faq</a></li>
+		</ul>
+		<p>2009 &#169; <a href="#" title="Let&#39;s decide us" rel="home">Let&#39;s decide us</a> - A way of voting on mailing lists and forums<sup class="reference"><a href="http://en.wikipedia.org/wiki/%2B1_(disambiguation)">1</a></sup>.</p>
+	</div><!-- #footer -->
+
+	<script type="text/javascript">
+	function SelectAll(txtfld)
+	{
+		document.getElementById(txtfld).focus();
+		document.getElementById(txtfld).select();
+	}
+	</script>
+
+	<!-- google analytics -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-10351226-1");
+		pageTracker._trackPageview();
+		} catch(err) {}</script>
+	</body>
+	</html>

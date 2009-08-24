@@ -1,0 +1,24 @@
+<span id="answer_<%= answer.id %>">
+	<li class="vote <%= aditional_vote_class(answer) %>"><!-- sin respuesta -->
+		<div id="answer_gravatar">
+			<%=
+			gravatar(
+			answer.mail,
+			:size => 40,
+			:default => "#{root_url}/img/avatar_40x40.jpg",
+			:class => 'avatar big',
+			:alt => "avatar from #{answer_name_or_mail(answer)}"
+			)
+			%>
+		</div>
+		<div class="author"><%= answer_name_or_mail(answer) %></div>
+		<abbr class="date" title="<%= answer.mail_date %>"><%= time_ago_in_words(answer.mail_date) %></abbr>
+
+		<% unless answer.body.empty? %>
+		<div class="vote-content">
+			<p><%= simple_format( h answer.body ) %></p>
+		</div>
+		<% end %>	
+
+	</li>
+</span>

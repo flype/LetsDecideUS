@@ -1,0 +1,24 @@
+test:
+  host: test.localhost
+  admin_mails: "your@mail.com"
+  bot_mail: bot@domain.com
+  bot_mail_pass: yourpass
+  bot_mail_server: mail.domain.com
+  bot_mail_domain: domain.com
+  
+development:
+  host: localhost:3000
+  admin_mails: "your@mail.com"
+  bot_mail: bot@domain.com
+  bot_mail_pass: yourpass
+  bot_mail_server: mail.domain.com
+  bot_mail_domain: domain.com
+ 
+production:
+  host: domain.com
+  admin_mails: "your@mail.com"
+  bot_mail: bot@domain.com
+  bot_mail_pass: yourpass
+  bot_mail_server: mail.domain.com
+  bot_mail_domain: domain.com
+

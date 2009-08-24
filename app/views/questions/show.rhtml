@@ -1,0 +1,41 @@
+<div id="header">
+	<%=
+  	gravatar(
+    	@question.owner_mail,
+    	:size => 80,
+    	:default => "#{root_url}/img/avatar_80x80.jpg",
+    	:class => 'avatar big',
+    	:alt => "avatar from #{question_name_or_mail}"
+  	)
+	%>
+	<h2 class="title"><%= @question.subject %></h2>
+	<p class="meta">Asked by <span class="author"><%= question_name_or_mail %></span>, <abbr class="date" title="<%= @question.mail_date %>"><%= time_ago_in_words(@question.mail_date) %></abbr>. <span class="answers-link"><a href="#answers" title="Answers on Do you like my tee&#63;"><span id="answers_by_now"><%= @question.answers.size %></span> Answers by now</a>.</span></p>
+</div><!-- #header -->
+
+<!-- question id: <%= @question.id %> -->
+
+<div id="content">
+	<%= parse_body_for_metadata @question.body %>
+</div><!-- #content -->
+
+
+<div id="answers">
+	<h3>Answers</h3>
+	<div id="result">
+		<h4><%= @question.votation_result %></h4>
+	</div>
+	<div class="answers-top"></div><!-- para elementos del background -->
+	<ol>
+		<li class="titlecol rcol col"><!-- +1 sin respuesta -->
+			<h4 class="no">-<%= @question.minus_counter_without_duplicated %></h4>
+			<h5 class="total"><span><%= @question.minus_counter_with_duplicated %></span> votes so far</h5>
+		</li>
+		<li class="titlecol lcol col"><!-- +1 sin respuesta -->
+			<h4 class="yes">+<%= @question.plus_counter_without_duplicated %></h4>
+			<h5 class="total"><span><%= @question.plus_counter_with_duplicated %></span> votes so far</h5>
+		</li>
+		<%= render :partial => "answer", :collection => @question.answers.order_desc %>
+	</ol>
+
+	<div class="answers-bottom"></div><!-- para elementos del background -->
+</div><!-- #answers -->

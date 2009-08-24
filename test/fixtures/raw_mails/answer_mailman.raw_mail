@@ -1,0 +1,182 @@
+Return-Path: <python-list-bounces+bot=letsdecide.us@python.org>
+X-Original-To: bot@letsdecide.us
+Delivered-To: bot@letsdecide.us
+Received: from localhost (mail.n2kp3.com [192.168.2.1])
+	by LINCL587.n2kp3.com (Postfix) with ESMTP id 7F58C5762D2
+	for <bot@letsdecide.us>; Sun, 23 Aug 2009 22:37:13 +0200 (CEST)
+Received: from LINCL587.n2kp3.com ([192.168.2.1])
+	by localhost (lincl107.n2kp3.com [192.168.2.1]) (amavisd-new, port 10024)
+	with ESMTP id CrGMxOlhyDIT for <bot@letsdecide.us>;
+	Sun, 23 Aug 2009 22:37:13 +0200 (CEST)
+Received: from mail.python.org (mail.python.org [82.94.164.166])
+	(using TLSv1 with cipher ADH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by LINCL587.n2kp3.com (Postfix) with ESMTP id E3DA45762D1
+	for <bot@letsdecide.us>; Sun, 23 Aug 2009 22:36:52 +0200 (CEST)
+Received: from albatross.python.org (localhost.localdomain [127.0.0.1])
+	by mail.python.org (Postfix) with ESMTP id AD2E4ED02
+	for <bot@letsdecide.us>; Sun, 23 Aug 2009 22:49:40 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=python.org; s=200901;
+	t=1251060580; bh=qDkTjt9SRE8b9zp3r4MH0ouaugf3zMFGa6xzcx2tV0I=;
+	h=MIME-Version:In-Reply-To:References:Date:Message-ID:Subject:From:
+	 To:List-Id:List-Unsubscribe:List-Archive:List-Post:List-Help:
+	 List-Subscribe:Content-Type:Sender;
+	b=UUEtJPzIozluPAkJXv1H3D6Km+nAQnH/IYJ8tzROctgyfFy0y+7MdvYY9D0H2wYf3
+	 1RZLcycpiKLsieKjWjzWvHifQ8Yokfl9VkROD6/xps8cTPtF79oPrVvcZT3MVO+NxZ
+	 hGsYft9Sc7n2U2xOmOjc0aJfnjaIRCs6Oplt+REc=
+X-Original-To: python-list@python.org
+Delivered-To: python-list@mail.python.org
+Received: from albatross.python.org (localhost.localdomain [127.0.0.1])
+	by mail.python.org (Postfix) with ESMTP id A9A6CEA6C
+	for <python-list@python.org>; Sun, 23 Aug 2009 22:49:32 +0200 (CEST)
+X-Spam-Status: OK 0.010
+X-Spam-Evidence: '*H*': 0.98; '*S*': 0.00; 'subject:python': 0.02;
+	'python': 0.03; 'needed.': 0.05; 'pm,': 0.07; 'wrote:': 0.09;
+	'bits': 0.09; 'header:In-Reply-To:1': 0.12; 'application,': 0.16;
+	'cheers': 0.16; 'fancy': 0.16; 'java.': 0.16; 'optimize': 0.16;
+	'sun,': 0.16; 'worry': 0.16; "i'm": 0.25; 'peter': 0.26; 'van':
+	0.26; 'subject:?': 0.29; 'url:mailman': 0.30; 'aug': 0.31;
+	'received:209.85': 0.32; 'received:209.85.219': 0.32; 'speed':
+	0.32; 'user': 0.33; 'received:google.com': 0.33; 'message-
+	id:@mail.gmail.com': 0.33; 'probably': 0.34; 'received:209': 0.36;
+	'to:addr:python-list': 0.36; 'url:listinfo': 0.37;
+	'from:addr:gmail.com': 0.38; 'subject:: ': 0.39; 'but': 0.39;
+	'once': 0.60; 'its': 0.63; 'skip:r 10': 0.63; '8bit%:8': 0.67;
+	'identified': 0.69; 'makes': 0.73; '9:59': 0.84; 'concerned':
+	0.84; 'subject:than': 0.84; 'what?': 0.84
+Received: from localhost.localdomain (HELO mail.python.org) (127.0.0.1)
+	by albatross.python.org with SMTP; 23 Aug 2009 22:49:32 +0200
+Received: from mail-ew0-f210.google.com (mail-ew0-f210.google.com
+	[209.85.219.210]) by mail.python.org (Postfix) with ESMTP
+	for <python-list@python.org>; Sun, 23 Aug 2009 22:49:32 +0200 (CEST)
+Received: by ewy6 with SMTP id 6so2029420ewy.34
+	for <python-list@python.org>; Sun, 23 Aug 2009 13:49:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+	h=domainkey-signature:mime-version:received:in-reply-to:references
+	:date:message-id:subject:from:to:content-type;
+	bh=OOgs9elyBdtJjgake5rkb9Wdq3fcXqou5KhcHcjxSFc=;
+	b=TnA3ZeztG5USzMQMje0oAtbg7GK30L3kfqxDdwTvuWkzrb4Mu5siiOeZ6WWK8LJs52
+	j8CNrbI5gQBrEXHxnnvIMMLGzt2U1Z3B8ixDa1fhjkrCcv7UrYSXU37DaJKu1tVxa9nv
+	pilHb8rPwBwoB04TnThvm/qwCA+uxe8SLRY28=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+	h=mime-version:in-reply-to:references:date:message-id:subject:from:to
+	:content-type;
+	b=Gt+7cCxCVfs8Qnu9Zl8/NdpJxCLd9rIksnTIE0N+UllMP1Cc1pGi/FxcZmctG6bnqO
+	d/42O5ns+KJaDcKZVJkGp7toWx0QSAo1vEtkHU4exheOSOXruEkQRDSCwTHQjU1OpyMS
+	Tgs2QOuq0uZQnUyUyzBqbciHjsI107SCyROvQ=
+MIME-Version: 1.0
+Received: by 10.210.138.3 with SMTP id l3mr3997491ebd.43.1251060572031; Sun, 
+	23 Aug 2009 13:49:32 -0700 (PDT)
+In-Reply-To: <h6s73d$sqe$1@ger.gmane.org>
+References: <ab67cdb0908231247w6c435f00n41e6dba22e4943e7@mail.gmail.com>
+	<h6s73d$sqe$1@ger.gmane.org>
+Date: Sun, 23 Aug 2009 22:49:32 +0200
+Message-ID: <ab67cdb0908231349p235288f4yc5dcd2f84c883e09@mail.gmail.com>
+Subject: Re: Is python faster than java?
+From: Raimond Garcia <voodoorai2000@gmail.com>
+To: python-list@python.org
+X-BeenThere: python-list@python.org
+X-Mailman-Version: 2.1.12
+Precedence: list
+List-Id: General discussion list for the Python programming language
+	<python-list.python.org>
+List-Unsubscribe: <http://mail.python.org/mailman/options/python-list>,
+	<mailto:python-list-request@python.org?subject=unsubscribe>
+List-Archive: <http://mail.python.org/pipermail/python-list>
+List-Post: <mailto:python-list@python.org>
+List-Help: <mailto:python-list-request@python.org?subject=help>
+List-Subscribe: <http://mail.python.org/mailman/listinfo/python-list>,
+	<mailto:python-list-request@python.org?subject=subscribe>
+Content-Type: multipart/mixed; boundary="===============1088715789=="
+Sender: python-list-bounces+bot=letsdecide.us@python.org
+Errors-To: python-list-bounces+bot=letsdecide.us@python.org
+
+--===============1088715789==
+Content-Type: multipart/alternative; boundary=0015174c1742fd0b960471d53cc4
+
+--0015174c1742fd0b960471d53cc4
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+Makes sense.
++1
+
+Cheers
+
+Peter
+
+On Sun, Aug 23, 2009 at 9:59 PM, Emile van Sebille <emile@fenx.com> wrote:
+
+> On 8/23/2009 12:47 PM Raimond Garcia said...
+>
+>> I'm building a large application,
+>>
+>
+> What kind of application?
+
+
+>
+>  kind of fancy python but I'm concerned about speed.
+>>
+>
+> Speed of what? Development? User interaction? Responsiveness to queries?
+> Mostly, you should worry about speed later.  Writing it in python is
+> probably faster than java.  Then optimize the slow bits once you've
+> identified where its needed.
+>
+> Emile
+>
+> --
+> http://mail.python.org/mailman/listinfo/python-list
+>
+
+--0015174c1742fd0b960471d53cc4
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Makes sense.<div><br></div><div>+1</div><div><br></div><div>Cheers</div><di=
+v><br></div><div>Peter<br><br><div class=3D"gmail_quote">On Sun, Aug 23, 20=
+09 at 9:59 PM, Emile van Sebille <span dir=3D"ltr">&lt;<a href=3D"mailto:em=
+ile@fenx.com">emile@fenx.com</a>&gt;</span> wrote:<br>
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex;">On 8/23/2009 12:47 PM Raimond Garcia said..=
+.<div class=3D"im"><br>
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex">
+I&#39;m building a large application, <br>
+</blockquote>
+<br></div>
+What kind of application?=A0</blockquote><blockquote class=3D"gmail_quote" =
+style=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex;"><d=
+iv class=3D"im"><br>
+<br>
+<blockquote class=3D"gmail_quote" style=3D"margin:0 0 0 .8ex;border-left:1p=
+x #ccc solid;padding-left:1ex">
+kind of fancy python but I&#39;m concerned about speed.<br>
+</blockquote>
+<br></div>
+Speed of what? Development? User interaction? Responsiveness to queries? Mo=
+stly, you should worry about speed later. =A0Writing it in python is probab=
+ly faster than java. =A0Then optimize the slow bits once you&#39;ve identif=
+ied where its needed.<br>
+
+<br>
+Emile<br><font color=3D"#888888">
+<br>
+-- <br>
+<a href=3D"http://mail.python.org/mailman/listinfo/python-list" target=3D"_=
+blank">http://mail.python.org/mailman/listinfo/python-list</a><br>
+</font></blockquote></div><br></div>
+
+--0015174c1742fd0b960471d53cc4--
+
+--===============1088715789==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+-- 
+http://mail.python.org/mailman/listinfo/python-list
+
+--===============1088715789==--

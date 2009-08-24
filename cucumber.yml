@@ -1,0 +1,2 @@
+webrat:   --require features/step_definitions --require features/support/webrat_env.rb -l es  --tags webrat    --format pretty --color features
+current: --require features/step_definitions --require features/support/webrat_env.rb -l es  --tags current  --format pretty --color features

@@ -1,0 +1,21 @@
+
+development:
+  adapter: mysql 
+  encoding: utf8 
+  database: ldu_development
+  username: root 
+  password: 
+
+test:
+  adapter: mysql 
+  encoding: utf8 
+  database: ldu_test
+  username: root 
+  password:
+    
+production:
+  adapter: mysql 
+  encoding: utf8 
+  database: letsdecideus
+  username: root 
+  password:

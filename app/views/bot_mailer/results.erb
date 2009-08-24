@@ -1,0 +1,13 @@
+<%= @requested_by.hide_at %> has asked me for the current status of our votation.. so here you go:
+
++1 => <%= pluralize( @question.plus_counter_without_duplicated, 'vote' ) %>
+-1 => <%= pluralize( @question.minus_counter_without_duplicated, 'vote' ) %>
+
+Time Line:
+----------
+<%- @question.answers.order_desc.each do |answer| -%>
+(<%= answer.mail_date.to_s(:db) %>) <%= answer_name_or_mail(answer) %>: <%= answer.vote %><%= ' (REVISED)'  if answer.has_expired? %>
+<%- end -%>
+
+Visit the fancy votation page:
+* http://<%= CONFIG[:host] %>/<%= @question.qhash %>

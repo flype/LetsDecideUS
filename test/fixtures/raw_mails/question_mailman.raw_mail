@@ -1,0 +1,114 @@
+Return-Path: <python-list-bounces+bot=letsdecide.us@python.org>
+X-Original-To: bot@letsdecide.us
+Delivered-To: bot@letsdecide.us
+Received: from localhost (mail.n2kp3.com [192.168.2.1])
+	by LINCL587.n2kp3.com (Postfix) with ESMTP id 17E545762D2
+	for <bot@letsdecide.us>; Sun, 23 Aug 2009 21:35:31 +0200 (CEST)
+Received: from LINCL587.n2kp3.com ([192.168.2.1])
+	by localhost (lincl107.n2kp3.com [192.168.2.1]) (amavisd-new, port 10024)
+	with ESMTP id FN10lU0Rl0xe for <bot@letsdecide.us>;
+	Sun, 23 Aug 2009 21:35:30 +0200 (CEST)
+Received: from mail.python.org (mail.python.org [82.94.164.166])
+	(using TLSv1 with cipher ADH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by LINCL587.n2kp3.com (Postfix) with ESMTP id 86BA45762D1
+	for <bot@letsdecide.us>; Sun, 23 Aug 2009 21:35:10 +0200 (CEST)
+Received: from albatross.python.org (localhost.localdomain [127.0.0.1])
+	by mail.python.org (Postfix) with ESMTP id 5269BEC1C
+	for <bot@letsdecide.us>; Sun, 23 Aug 2009 21:47:58 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=python.org; s=200901;
+	t=1251056878; bh=+1c9pyWAivvY+NgydcLujVuNRqXk429BhlsCcUlkrUo=;
+	h=MIME-Version:Date:Message-ID:Subject:From:To:List-Id:
+	 List-Unsubscribe:List-Archive:List-Post:List-Help:List-Subscribe:
+	 Content-Type:Sender;
+	b=rqfZmjO02LjSBdkiFSxaPTJDVbcP0N8tbyPcycXJRhNHOpnfq4e5y9CUmFNvtIycK
+	 j8qc+uRH5BFG/tQWLi79wJj7S0pCK+Q5ZDnf0dyKF2Aamc2dLyDA3XlyAYIU8Khoq7
+	 rsOTRlYK5tArvgoRd98+f4FasNvtFoGFzaaZ8pMU=
+X-Original-To: python-list@python.org
+Delivered-To: python-list@mail.python.org
+Received: from albatross.python.org (localhost.localdomain [127.0.0.1])
+	by mail.python.org (Postfix) with ESMTP id 3CF1AEBAA
+	for <python-list@python.org>; Sun, 23 Aug 2009 21:47:22 +0200 (CEST)
+X-Spam-Status: OK 0.027
+X-Spam-Evidence: '*H*': 0.95; '*S*': 0.00; 'subject:python': 0.02;
+	'python': 0.03; 'application,': 0.16; 'cheers': 0.16; 'fancy':
+	0.16; "i'm": 0.25; 'peter': 0.26; 'subject:?': 0.29;
+	'received:209.85': 0.32; 'received:209.85.219': 0.32;
+	'received:google.com': 0.33; 'message-id:@mail.gmail.com': 0.33;
+	'received:209': 0.36; 'to:addr:python-list': 0.36;
+	'from:addr:gmail.com': 0.38; 'but': 0.39; 'concerned': 0.84;
+	'subject:than': 0.84
+Received: from localhost.localdomain (HELO mail.python.org) (127.0.0.1)
+	by albatross.python.org with SMTP; 23 Aug 2009 21:47:22 +0200
+Received: from mail-ew0-f210.google.com (mail-ew0-f210.google.com
+	[209.85.219.210]) by mail.python.org (Postfix) with ESMTP
+	for <python-list@python.org>; Sun, 23 Aug 2009 21:47:22 +0200 (CEST)
+Received: by ewy6 with SMTP id 6so2001321ewy.34
+	for <python-list@python.org>; Sun, 23 Aug 2009 12:47:21 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=gamma;
+	h=domainkey-signature:mime-version:received:date:message-id:subject
+	:from:to:content-type;
+	bh=ZyxO6mxUx9L4UrOondmLeDeV1qvAfHbl+Wa9ZkgiM/0=;
+	b=fhOFu1IbodYwIKEbYcrTlt+CrHcCoFT3aiStPJnIBC9UxNtCuk3IpdUyR8AokUOjjL
+	PTYqV3z9ASQVYARXiiXI25LQhlrhwY4Mp50wJRmzMX8iCatYWZKzfiZycp4lQiAlCAVj
+	Gz2nioRbz/pHGwYsHT5UhSa6ZrK+kv9GvOjno=
+DomainKey-Signature: a=rsa-sha1; c=nofws; d=gmail.com; s=gamma;
+	h=mime-version:date:message-id:subject:from:to:content-type;
+	b=M62k9nTvRZEYkppBntdyfiylns+Kz0ZppJQtWguHxpgpbU0rknmAqkcZ0cnGUdtkEz
+	yIXurKHuom00dKTZGdlxoLxUD6PDaC4BIPZJ+VxYTD11uXVl/incqIsS8SgURmO1mUoR
+	lvOI3+yYL142F6BNgsjE8FAe0b2rRklGL7jAU=
+MIME-Version: 1.0
+Received: by 10.210.139.16 with SMTP id m16mr3864816ebd.30.1251056841273; Sun, 
+	23 Aug 2009 12:47:21 -0700 (PDT)
+Date: Sun, 23 Aug 2009 21:47:21 +0200
+Message-ID: <ab67cdb0908231247w6c435f00n41e6dba22e4943e7@mail.gmail.com>
+Subject: Is python faster than java?
+From: Raimond Garcia <voodoorai2000@gmail.com>
+To: python-list@python.org
+X-BeenThere: python-list@python.org
+X-Mailman-Version: 2.1.12
+Precedence: list
+List-Id: General discussion list for the Python programming language
+	<python-list.python.org>
+List-Unsubscribe: <http://mail.python.org/mailman/options/python-list>,
+	<mailto:python-list-request@python.org?subject=unsubscribe>
+List-Archive: <http://mail.python.org/pipermail/python-list>
+List-Post: <mailto:python-list@python.org>
+List-Help: <mailto:python-list-request@python.org?subject=help>
+List-Subscribe: <http://mail.python.org/mailman/listinfo/python-list>,
+	<mailto:python-list-request@python.org?subject=subscribe>
+Content-Type: multipart/mixed; boundary="===============1000394937=="
+Sender: python-list-bounces+bot=letsdecide.us@python.org
+Errors-To: python-list-bounces+bot=letsdecide.us@python.org
+
+--===============1000394937==
+Content-Type: multipart/alternative; boundary=0015174c10389e32040471d45e9b
+
+--0015174c10389e32040471d45e9b
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+I'm building a large application, kind of fancy python but I'm concerned
+about speed.
+Cheers
+
+Peter
+
+--0015174c10389e32040471d45e9b
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+
+I&#39;m building a large application, kind of fancy python but I&#39;m concerned about speed.<div><br></div><div>Cheers</div><div><br></div><div>Peter</div>
+
+--0015174c10389e32040471d45e9b--
+
+--===============1000394937==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+-- 
+http://mail.python.org/mailman/listinfo/python-list
+
+--===============1000394937==--

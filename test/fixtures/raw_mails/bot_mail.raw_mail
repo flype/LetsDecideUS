@@ -1,0 +1,86 @@
+Return-Path: <grbounce-ezXnDQUAAABH8yTd6e4UAvLkHa0KHwqD=bot=letsdecide.us@googlegroups.com>
+X-Original-To: bot@letsdecide.us
+Delivered-To: bot@letsdecide.us
+Received: from localhost (mail.n2kp3.com [192.168.2.1])
+	by LINCL587.n2kp3.com (Postfix) with ESMTP id 9FF0C5762D2
+	for <bot@letsdecide.us>; Mon, 24 Aug 2009 00:54:19 +0200 (CEST)
+Received: from LINCL587.n2kp3.com ([192.168.2.1])
+	by localhost (lincl107.n2kp3.com [192.168.2.1]) (amavisd-new, port 10024)
+	with ESMTP id 8vbEb5-sMblQ for <bot@letsdecide.us>;
+	Mon, 24 Aug 2009 00:54:19 +0200 (CEST)
+Received: from mail-yw0-f151.google.com (mail-yw0-f151.google.com [209.85.211.151])
+	by LINCL587.n2kp3.com (Postfix) with ESMTP id 6BE985762D1
+	for <bot@letsdecide.us>; Mon, 24 Aug 2009 00:54:19 +0200 (CEST)
+Received: by ywh15 with SMTP id 15so4946091ywh.0
+        for <bot@letsdecide.us>; Sun, 23 Aug 2009 16:07:08 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlegroups.com; s=beta;
+        h=domainkey-signature:received:received:x-sender:x-apparently-to
+         :received:received:received:received-spf:received:received:received
+         :date:from:to:message-id:subject:mime-version:content-type:reply-to
+         :sender:precedence:x-google-loop:mailing-list:list-id:list-post
+         :list-help:list-unsubscribe:x-beenthere-env:x-beenthere;
+        bh=VC03K3lW0qIpFeVgtGDxJyOnziya/lczubpAFgkPypc=;
+        b=ayYIY0kjbDoIPMDnfMSLb0sg4TgWlQztP8Avuybqnpx0k+cfeoJA+YcgcAZImz8BSg
+         QR63zQ2h8EqR3C0W8hhnsAJGUyXSH/i2WD1TgK6wjX+wmZn8PU/IViWAWjkTfAb7Fsa+
+         MARZuZfdGhF5yCf67r92LF13+dOWTnD+93HOM=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=googlegroups.com; s=beta;
+        h=x-sender:x-apparently-to:received-spf:authentication-results:date
+         :from:to:message-id:subject:mime-version:content-type:reply-to
+         :sender:precedence:x-google-loop:mailing-list:list-id:list-post
+         :list-help:list-unsubscribe:x-beenthere-env:x-beenthere;
+        b=YpD76QX3uT7jiPLpzSGLIu0JJOrKVhACHn+XMRR/bjfSaIaNNJy7tAd0yJxkGQupMn
+         BtFUlalQXVHAUhIy8ZmQd8x0QcUQS5V5hyIzX/SaKCSdY0a8mRTREzvPU7LiSeaRlbks
+         rq4SkyXI55u7XfSzoZjlNv0ZqLba4vG+o8Fqw=
+Received: by 10.91.169.1 with SMTP id w1mr470230ago.13.1251068828254;
+        Sun, 23 Aug 2009 16:07:08 -0700 (PDT)
+Received: by 10.176.146.3 with SMTP id t3gr48yqd.0;
+	Sun, 23 Aug 2009 16:07:08 -0700 (PDT)
+X-Sender: bot@letsdecide.us
+X-Apparently-To: letsdecideus_test@googlegroups.com
+Received: by 10.210.139.9 with SMTP id m9mr722846ebd.6.1251068827061; Sun, 23 Aug 2009 16:07:07 -0700 (PDT)
+Received: by 10.210.139.9 with SMTP id m9mr722845ebd.6.1251068827044; Sun, 23 Aug 2009 16:07:07 -0700 (PDT)
+Received: from LINCL587.n2kp3.com (ip-67-205-102-80.static.privatedns.com [67.205.102.80]) by gmr-mx.google.com with ESMTP id 14si1133048ewy.5.2009.08.23.16.07.06; Sun, 23 Aug 2009 16:07:07 -0700 (PDT)
+Received-SPF: neutral (google.com: 67.205.102.80 is neither permitted nor denied by best guess record for domain of bot@letsdecide.us) client-ip=67.205.102.80;
+Authentication-Results: gmr-mx.google.com; spf=neutral (google.com: 67.205.102.80 is neither permitted nor denied by best guess record for domain of bot@letsdecide.us) smtp.mail=bot@letsdecide.us
+Received: from localhost (mail.n2kp3.com [192.168.2.1]) by LINCL587.n2kp3.com (Postfix) with ESMTP id 38ABA5762D2 for <letsdecideus_test@googlegroups.com>; Mon, 24 Aug 2009 00:54:17 +0200 (CEST)
+Received: from LINCL587.n2kp3.com ([192.168.2.1]) by localhost (lincl107.n2kp3.com [192.168.2.1]) (amavisd-new, port 10024) with ESMTP id cEqGhyfxCW2k for <letsdecideus_test@googlegroups.com>; Mon, 24 Aug 2009 00:54:17 +0200 (CEST)
+Received: from letsdecide.us (li86-209.members.linode.com [74.207.244.209]) by LINCL587.n2kp3.com (Postfix) with ESMTP id BF0F35762D1 for <letsdecideus_test@googlegroups.com>; Mon, 24 Aug 2009 00:54:16 +0200 (CEST)
+Date: Sun, 23 Aug 2009 23:07:04 +0000
+From: bot@letsdecide.us
+To: letsdecideus_test@googlegroups.com
+Message-Id: <4a91cb98e61ff_6bd9..fdbe530de167@li86-209.tmail>
+Subject: Re: Do you want to help us with the debug?
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Reply-To: letsdecideus_test@googlegroups.com
+Sender: letsdecideus_test@googlegroups.com
+Precedence: bulk
+X-Google-Loop: groups
+Mailing-List: list letsdecideus_test@googlegroups.com;
+	contact letsdecideus_test+owner@googlegroups.com
+List-Id: <letsdecideus_test.googlegroups.com>
+List-Post: <mailto:letsdecideus_test@googlegroups.com>
+List-Help: <mailto:letsdecideus_test+help@googlegroups.com>
+List-Unsubscribe: <http://googlegroups.com/group/letsdecideus_test/subscribe>,
+	<mailto:letsdecideus_test+unsubscribe@googlegroups.com>
+X-BeenThere-Env: letsdecideus_test@googlegroups.com
+X-BeenThere: letsdecideus_test@googlegroups.com
+
+
+guillermo on cientifico.net has asked me for the current status of our votation.. so here you go:
+
++1 => 3 votes
+-1 => 1 vote
+
+Time Line:
+----------
+(2009-08-23 23:07:04) =?ISO-8859-1?Q?Guillermo_=C1lvarez?=: -1
+(2009-08-23 22:58:04) =?ISO-8859-1?Q?Juanjo_Baz=E1n?=: +1
+(2009-08-23 22:58:04) Raimond Garcia: +1
+(2009-08-23 22:54:04) Felipe Talavera: +1
+(2009-08-23 22:51:04) Raimond Garcia: +1 (REVISED)
+
+Visit the fancy votation page:
+* http://letsdecide.us/abad029606aee53c87deb67c5c07eb385814204c

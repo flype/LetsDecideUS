@@ -1,0 +1,22 @@
+.novalid #answer_gravatar{  
+	background: #000;  
+	opacity: .4;  
+	/* For IE 5-7 */  
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);  
+	/* For IE 8 */  
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";  	
+}
+.novalid{
+	color: #bbb;
+}
+.novalid #answer_gravatar:hover{  
+	background: #000;  
+	opacity: 1;  
+	/* For IE 5-7 */  
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);  
+	/* For IE 8 */  
+	-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";  	
+}
+.novalid:hover{
+	color: #000;
+}
