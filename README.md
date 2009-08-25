@@ -1,14 +1,49 @@
 # Lestdecide.us 
-
 Ask a question, vote and view the results directly from your email. 
 
 
 ## What is lestdecide.us 
-
 It’s a new friend to include in your mailing list. 
 
 It’s a completely transparent and light system to do **surveys by email** between your friends or your mailing list storing the responses received. 
 
+
+## Why?
+
+We made it just for fun during the 2009 rails rumble with the idea that everybody could take advantage of our idea.
+We don't have nothing to hide about the behaviour of our bot, so it goes OpenSource, because maybe you prefer to have your mail privacy under you control, so do us.
+
+## Install
+
+Yes, it's a rails app so follow the normal convections, only I have to remark some config details and tools we made to facilitate the setup.
+
+### gems
+We use a bunch of gems that you have to install before firing up the server:
+
+	sudo gem install gravatar youtube-g xml-simple hpricot javan-whenever lockfile thoughtbot-factory_girl cucumber rspec rspec-rails webrat nokogiri
+
+### db setup
+Now you can setup the "config/database.yml" file.
+You can also run the populate task if you want, to have some data in your database rake db:remake
+
+### bot setup
+Setup the "config/config.yml" where you will have to setup config details for the account that the bot will use and the domain of the applicaction:
+
+	host: domain.com
+	admin_mails: "your@mail.com"
+	bot_mail: bot@domain.com
+	bot_mail_pass: yourpass
+	bot_mail_server: mail.domain.com
+	bot_mail_domain: domain.com
+
+to start the bot we recomend to prepare a cron executing the rake task  with your desired frequency. 
+
+	rake ldu:mail_digest
+
+## test suit
+You can run the test suit with:
+
+	rake test features.
 
 ## Limitations 
 
@@ -132,3 +167,14 @@ As in the example of a group of friends any member of the list can ask for the  
 The mail must be sent to the list and not directly to our friend. 
 
 The response of our friend will be sent to the list.
+
+## Who made this
+As we said we made this for the 2009 rails rumble under the [mallorca's team](http://r09.railsrumble.com/teams/mallorca).
+###Team members
+[Fernando Guillen](http://www.fernandoguillen.info/)
+
+[Raimon García](http://www.spainrb.org/raimond-garcia)
+
+[Carlos Matallín](http://c.matallin.com/)
+
+[Felipe Talavera](http://iamfelipe.com)
